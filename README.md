@@ -1,1 +1,1 @@
-# Day-NIght_Strategy
+# Day-Night_Strategy
