@@ -1,5 +1,5 @@
 # Day and Night Trading Strategy
-## ✨ What is the Day & Night Strategy?
+## What is the Day & Night Strategy?
 
 The "Day & Night" strategy comes from a research paper that found something surprising:
 
@@ -17,7 +17,7 @@ This strategy looks to **capture those overnight gains** by:
 
 ---
 
-## 🚀 Why Does the Strategy Work?
+## Why Does the Strategy Work?
 
 The exact reason isn’t fully clear, but here are a few ideas:
 
@@ -30,14 +30,14 @@ Surprisingly, even though the **daytime has more trading volume and volatility**
 
 ---
 
-## 🌌 What Strategy Did I Implement?
+## What Strategy Did I Implement?
 
 I tested this strategy on **Apple (AAPL)** and **Amazon (AMZN)** stocks using Python and historical data.
 
 ### Steps:
 1. Pulled historical stock data from Yahoo Finance.
 2. Calculated:
-   - **Night Return**: (Next day's Open / Previous day's Close) - 1
+   - **Night Return**: (Next day's Open / Today's Close) - 1
    - **Day Return**: (Close / Open) - 1
 3. Created a slider to adjust the weight (e.g., 50% Apple, 50% Amazon or any mix).
 4. Simulated and plotted the **cumulative returns** of both strategies.
@@ -45,7 +45,7 @@ I tested this strategy on **Apple (AAPL)** and **Amazon (AMZN)** stocks using Py
 
 ---
 
-## ⚖️ Pros and Cons
+## Pros and Cons
 
 ### Pros:
 - Simple and rules-based
@@ -59,7 +59,7 @@ I tested this strategy on **Apple (AAPL)** and **Amazon (AMZN)** stocks using Py
 
 ---
 
-## 🙋 How Can It Be Improved?
+## How Can It Be Improved?
 - Combine this with **volatility filters** or **volume confirmation**
 - Use it only during **earnings seasons** or specific days
 - Apply **machine learning** to predict strong overnight candidates
@@ -67,21 +67,21 @@ I tested this strategy on **Apple (AAPL)** and **Amazon (AMZN)** stocks using Py
 
 ---
 
-## 📊 Performance Summary
+## Performance Summary
 - **Night strategy (AAPL + AMZN)** significantly outperformed the **day strategy**.
 - Sharpe Ratio for night strategy was higher, meaning **better return per unit of risk**.
 - Results matched the original paper: **overnight = alpha**!
 
 ---
 
-## 📅 Similar Strategies
+## Similar Strategies
 - **Weekend Effect**: Returns from Friday close to Monday open
 - **Earnings Drift**: Buying after positive earnings surprises
-- **Opening Range Breakout**: Using first 30 mins to set entry/exit
+- **Opening Range Breakout**: Using the first 30 mins to set entry/exit
 
 ---
 
-## 🚀 Summary
+## Summary
 This strategy shows that sometimes, **doing nothing overnight** beats trading all day. It challenges traditional thinking and shows the value of digging into data.
 
 If you’re curious about trading strategies, backtesting, or market anomalies — this is a great place to start!
